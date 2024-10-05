@@ -10,7 +10,7 @@ function ResetPasswordForm() {
     const handleResetPassword = (event) => {
         event.preventDefault();
 
-        fetch('/v1/signos/reset-password', {
+        fetch('https://api-json-two.vercel.app/v1/signos/reset-password', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, newPassword }),

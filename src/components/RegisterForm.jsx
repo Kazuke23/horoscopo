@@ -10,7 +10,7 @@ function RegisterForm() {
     const handleRegister = (event) => {
         event.preventDefault();
         
-        fetch('/v1/signos/register', {
+        fetch('https://api-json-two.vercel.app/v1/signos/register', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password }),
